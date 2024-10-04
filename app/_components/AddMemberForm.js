@@ -49,7 +49,7 @@ export default function AddMemberForm({ onSave, onCancel, includePosition = true
 
   return (
     <div className="flex bg-bgColor dark:bg-darkBg transition-colors duration-100">
-      <div className="w-full p-6 bg-white dark:bg-SecDarkBg transition-colors duration-300 shadow-md rounded-lg text-black">
+      <div className="w-full p-6 bg-white dark:bg-SecDarkBg transition-colors duration-300 shadow-md rounded-lg text-black dark:text-darkText">
 
         <div className="flex flex-col items-center mb-8">
           <label className="relative cursor-pointer">
@@ -68,7 +68,7 @@ export default function AddMemberForm({ onSave, onCancel, includePosition = true
                 className="w-56 h-56 object-cover rounded-full border p-2"
               />
             ) : (
-              <div className="w-32 h-32 rounded-full bg-[#ECECEE] flex items-center justify-center">
+              <div className="w-32 h-32 rounded-full bg-[#ECECEE] dark:text-black flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
@@ -88,7 +88,7 @@ export default function AddMemberForm({ onSave, onCancel, includePosition = true
               value={newContact.name}
               onChange={handleChange}
               placeholder="Full Name"
-              className="w-full p-2 border rounded dark:border-gray-700 dark:bg-SecDarkBg"
+              className="w-full p-2 border rounded dark:border-slate-700 dark:bg-SecDarkBg"
               required
             />
             <input
@@ -97,7 +97,7 @@ export default function AddMemberForm({ onSave, onCancel, includePosition = true
               value={newContact.email}
               onChange={handleChange}
               placeholder="Email"
-              className="w-full p-2 border rounded dark:bg-SecDarkBg dark:border-gray-700"
+              className="w-full p-2 border rounded dark:bg-SecDarkBg dark:border-slate-700"
               required
             />
           </div>
@@ -108,7 +108,7 @@ export default function AddMemberForm({ onSave, onCancel, includePosition = true
               value={newContact.phone}
               onChange={handleChange}
               placeholder="Phone Number"
-              className="w-full p-2 border dark:border-gray-700  rounded dark:bg-SecDarkBg"
+              className="w-full p-2 border dark:border-slate-700  rounded dark:bg-SecDarkBg"
               required
             />
             {includePosition && (
@@ -118,7 +118,7 @@ export default function AddMemberForm({ onSave, onCancel, includePosition = true
                 value={newContact.position}
                 onChange={handleChange}
                 placeholder="Position"
-                className="w-full p-2 border dark:border-gray-700 rounded dark:bg-SecDarkBg "
+                className="w-full p-2 border dark:border-slate-700 rounded dark:bg-SecDarkBg "
               />
             )}
           </div>
@@ -127,7 +127,7 @@ export default function AddMemberForm({ onSave, onCancel, includePosition = true
               name="gender"
               value={newContact.gender}
               onChange={handleChange}
-              className="w-full p-2 border rounded dark:border-gray-700 dark:bg-SecDarkBg dark:text-darkText"
+              className="w-full p-2 border rounded dark:border-slate-700 dark:bg-SecDarkBg dark:text-darkText"
               required
             >
               <option value="">Select Gender</option>
@@ -146,7 +146,7 @@ export default function AddMemberForm({ onSave, onCancel, includePosition = true
             <button
               type="button"
               onClick={onCancel}
-              className="bg-[#ECECEE] px-6 py-3 rounded-lg ml-4"
+              className="bg-[#ECECEE] dark:text-black px-6 py-3 rounded-lg ml-4"
             >
               Cancel
             </button>

@@ -40,7 +40,7 @@ export default function Page() {
         <h1 className="text-2xl md:text-3xl font-bold mb-4 md:mb-0">Product Stock</h1>
         <SearchBar search={search} setSearch={setSearch} />
       </div>
-      <div className="shadow-lg rounded-lg flex-grow bg-white overflow-hidden">
+      <div className="rounded-lg flex-grow bg-white dark:bg-SecDarkBg overflow-hidden">
         {filteredProducts.length > 0 ? (
           <>
             <div className="hidden md:block">
@@ -59,8 +59,8 @@ export default function Page() {
             </div>
           </>
         ) : (
-          <div className="p-4 text-center text-2xl font-bold mt-14">
-            Good job, now all products are gone!
+          <div className="p-6 text-center text-2xl font-bold mt-14 ">
+            Oops! there is no products .
           </div>
         )}
       </div>

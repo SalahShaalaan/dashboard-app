@@ -4,7 +4,7 @@ export default function SearchBar({ search, setSearch }) {
       <input
         type="text"
         placeholder="Search product name"
-        className="w-full md:w-64 border rounded-full px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-blue dark:bg-SecDarkBg dark:border-slate-500"
+        className="w-full md:w-64 border rounded-full px-4 py-2 pl-10 focus:outline-none  dark:bg-SecDarkBg dark:border-slate-700"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />

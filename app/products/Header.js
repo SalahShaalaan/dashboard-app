@@ -52,7 +52,7 @@ export default function Header() {
       </div>
       <button
         onClick={() => changeSlide(-1)}
-        className="absolute left-0 top-1/2 cursor-pointer bg-[#c5d5f7] p-2 rounded-full text-[#363636] hover:bg-[#a7bfef] transition-colors duration-300"
+        className="absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer bg-[#c5d5f7] p-2 rounded-full text-[#363636] hover:bg-[#a7bfef] transition-colors duration-300"
 
       >
         <svg
@@ -68,9 +68,7 @@ export default function Header() {
       </button>
       <button
         onClick={() => changeSlide(1)}
-        className="absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer bg-[#c5d5f7] p-2 rounded-full text-[#363636] hover:bg-[#a7bfef] transition-colors duration-300"
-        style={{ marginTop: '20px' }} // إضافة هوامش
-      >
+        className="absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer bg-[#c5d5f7] p-2 rounded-full text-[#363636] hover:bg-[#a7bfef] transition-colors duration-300"      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
